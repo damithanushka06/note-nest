@@ -1,0 +1,24 @@
+<form (ngSubmit)="saveNote()" class="mt-6 space-y-3 max-w-xl mx-auto">
+  <input
+    type="text"
+    [(ngModel)]="title"
+    name="title"
+    placeholder="Note title"
+    class="border p-2 w-full rounded"
+    required
+  />
+  <textarea
+    [(ngModel)]="content"
+    name="content"
+    placeholder="Write your note here..."
+    rows="5"
+    class="border p-2 w-full rounded"
+    required
+  ></textarea>
+  <button
+    type="submit"
+    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+  >
+    Save
+  </button>
+</form>
